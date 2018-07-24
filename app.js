@@ -159,3 +159,57 @@ const renderArticle = article => {
 const renderResults = articles => {
   articles.forEach(article => renderArticle(article));
 };
+
+/* App Controller */
+
+// The global state of the App 
+const state = {};
+
+const controlSearch = async () => {
+  const query = getInput();
+  if (query) {
+    state.search = new Search(query);
+    clearResults();
+    renderLoader(elements.searchRes);
+    await state.search.getResults('search');
+    clearLoader();
+    closeSlideMenu();
+    renderResults(state.search.articles);
+  };
+};
+
+const mainNews = async () => {
+  state.mainNews = new Search();
+  clearInput();
+  clearResults();
+  renderLoader(elements.searchRes);
+  await state.mainNews.getResults('main');
+  clearLoader();
+  renderResults(state.mainNews.articles);
+};
+
+const topHNews = async () => {
+  state.topHNews = new Search();
+  clearInput();
+  clearResults();
+  renderLoader(elements.searchRes);
+  await state.topHNews.getResults('top');
+  clearLoader();
+  closeSlideMenu();
+  renderResults(state.topHNews.articles);
+};
+
+document.addEventListener('DOMContentLoaded', mainNews);
+elements.searchForm.addEventListener('input', e => {
+  e.preventDefault();
+  controlSearch();
+});
+
+// Slide menu in the right side for mobile devices
+function openSlideMenu() {
+  elements.sideMenu.style.width = '200px';
+};
+
+function closeSlideMenu() {
+  elements.sideMenu.style.width = '0';
+};
