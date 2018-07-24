@@ -185,6 +185,7 @@ form.search input[type='text'] {
   float: left;
   width: 100%;
   position: relative;
+  z-index: 0;
 }
 
 main a {
@@ -237,34 +238,6 @@ main .side-nav a {
 
 main .side-nav a:hover {
   color: #ff6600;
-}
-
-.btn-load-more {
-  margin-top: 300px;
-  margin-bottom: 50px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  background: #ff6600;
-  font-size: 16px;
-  font-weight: 400;
-  color: #111111;
-  letter-spacing: 1px;
-  padding: 5px 20px;
-  box-shadow: 0 6px #111111;
-  border-radius: 10px;
-}
-
-.btn-load-more:hover {
-  box-shadow: 0 4px #111111;
-  top: 2px;
-}
-
-.btn-load-more:active {
-  box-shadow: 0 0 #111111;
-  top: 6px;
 }
 
 .HNclone {
@@ -360,7 +333,7 @@ footer a:hover {
   main a {
     font-size: 0.9em;
   }
-  .HNclone {
-    content: '';
+  .HNclone a {
+    display: none;
   }
 }
