@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://swiftcourt.com/application/themes/swiftcourt/favicon/favicon-96x96.png">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300i,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Swift News</title>
+</head>
+
+<body>
+  <!-- Header section of the page -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header">
+        <div id="logo">
+          <a href="index.html">
+            <h2>Swift
+              <span class="news">News</span>
+            </h2>
+          </a>
+        </div>
+        <button type="submit" onclick="toggle()">
+          <i class="fa fa-search"></i>
+        </button>
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="25" height="25">
+              <path d="M0,4 30,4" stroke="#000" stroke-width="4" />
+              <path d="M0,12 30,12" stroke="#000" stroke-width="4" />
+              <path d="M0,20 30,20" stroke="#000" stroke-width="4" />
+            </svg>
+          </a>
+        </span>
+        <nav class="navbar-top">
+          <ul>
+            <li>
+              <a href="#" onclick="topHNews();">top10</a>
+            </li>
+            <li>
+              <a href="#" class="saved">saved</a>
+            </li>
+            <li>
+              <a href="https://news.ycombinator.com/newcomments" target="_blank">comments</a>
+            </li>
+            <li>
+              <a href="https://news.ycombinator.com/show" target="_blank">show</a>
+            </li>
+            <li>
+              <a href="https://news.ycombinator.com/ask" target="_blank">ask</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Main section of the page -->
+  <main class="site-main">
+    <div class="container">
+      <div class="float-left">
+        <div class="HNclone">
+          <a href="https://news.ycombinator.com" target="_blank">Hacker News
+            <span class="clone">clone</span>
+          </a>
+        </div>
+      </div>
+      <div class="float-right">
+        <form class="search">
+          <input class="searchNews" type="text" placeholder="Search news">
+        </form>
+      </div>
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#" onclick="topHNews();">top10</a>
+        <a href="#">saved</a>
+        <a href="https://news.ycombinator.com/newcomments" target="_blank" onclick="closeSlideMenu()">comments</a>
+        <a href="https://news.ycombinator.com/show" target="_blank" onclick="closeSlideMenu()">show</a>
+        <a href="https://news.ycombinator.com/ask" target="_blank" onclick="closeSlideMenu()">ask</a>
+      </div>
+      <article class="top-news">
+        <div class="result-news"></div>
+      </article>
+      <div class="load-more">
+      </div>
+    </div>
+  </main>
+  <!-- Footer section of the page -->
+  <footer>
+    <div class="container">
+      <div class="site-footer">
+        <p>Powered by:
+          <a href="http://www.newsapi.org" target="_blank">
+            <strong>NewsAPI</strong>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
