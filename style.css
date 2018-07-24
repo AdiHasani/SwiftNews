@@ -16,7 +16,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   color: #000000;
   font: 18px/1.5 'Lato', 'Arial', 'Helvetica', sans-serif;
 }
@@ -49,8 +49,8 @@ input:focus {
   left: 0;
   top: 0;
   right: 0;
-  background-color: #FFF;
-  border-bottom: #FF6600 2px solid;
+  background-color: #fff;
+  border-bottom: #ff6600 2px solid;
   height: 55px;
 }
 
@@ -60,16 +60,16 @@ header button {
   margin-left: 20px;
   width: 50px;
   padding: 10px;
-  background: #FF6600;
+  background: #ff6600;
   color: #000;
   font-size: 17px;
-  border: 1px solid #FF6600;
+  border: 1px solid #ff6600;
   border-radius: 5px 5px 0 0;
   cursor: pointer;
 }
 
 header button:hover {
-  background: #F8F8FF;
+  background: #f8f8ff;
 }
 
 header nav,
@@ -84,7 +84,7 @@ header #logo {
 
 header .news,
 header a:hover {
-  color: #FF6600;
+  color: #ff6600;
 }
 
 header li {
@@ -133,10 +133,10 @@ header a {
   left: 50%;
   margin-top: -40px;
   margin-left: -40px;
-  border: 14px solid #FFFFFF;
+  border: 14px solid #ffffff;
   border-radius: 50%;
-  border-top: 14px solid #FF6600;
-  border-bottom: 14px solid #FF6600;
+  border-top: 14px solid #ff6600;
+  border-bottom: 14px solid #ff6600;
   width: 80px;
   height: 80px;
   -webkit-animation: spin 1.5s linear infinite;
@@ -164,13 +164,13 @@ header a {
   }
 }
 
-form.search input[type="text"] {
+form.search input[type='text'] {
   top: 54px;
   position: fixed;
   padding: 10px 5px 10px 20px;
   font-size: 17px;
   border-radius: 0 0 15px 15px;
-  border: 1px solid #FF6600;
+  border: 1px solid #ff6600;
   width: 250px;
   background: #ffffff;
 }
@@ -196,7 +196,7 @@ main a {
 
 main a:visited,
 a:hover {
-  color: #FF6600;
+  color: #ff6600;
 }
 
 main .source {
@@ -230,13 +230,13 @@ main .side-nav a {
   padding: 0px 10px 10px 30px;
   text-decoration: none;
   font-size: 22px;
-  color: #FFF;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
 
 main .side-nav a:hover {
-  color: #FF6600;
+  color: #ff6600;
 }
 
 .btn-load-more {
@@ -247,7 +247,7 @@ main .side-nav a:hover {
   cursor: pointer;
   display: block;
   position: relative;
-  background: #FF6600;
+  background: #ff6600;
   font-size: 16px;
   font-weight: 400;
   color: #111111;
@@ -273,7 +273,7 @@ main .side-nav a:hover {
   top: 55px;
   width: 1139px;
   height: 30px;
-  background-color: #FFF;
+  background-color: #fff;
   border: 1px solid #000000;
   border-radius: 0 0 10px 10px;
   border-top: none;
@@ -282,7 +282,7 @@ main .side-nav a:hover {
 }
 
 main .clone {
-  color: #FF6600;
+  color: #ff6600;
 }
 
 main .HNclone a {
@@ -293,7 +293,7 @@ main .HNclone a {
 }
 
 main .HNclone a:hover {
-  color: #FF6600;
+  color: #ff6600;
 }
 
 /* Footer section */
@@ -304,8 +304,8 @@ footer .site-footer {
   right: 0;
   bottom: 0;
   height: 40px;
-  background-color: #F8F8FF;
-  border-top: #FF6600 2px solid;
+  background-color: #f8f8ff;
+  border-top: #ff6600 2px solid;
   text-align: center;
 }
 
@@ -321,12 +321,12 @@ footer a {
 }
 
 footer a:hover {
-  color: #FF6600;
+  color: #ff6600;
 }
 
 /* Media Queries */
 
-@media(max-width:1200px) {
+@media (max-width: 1200px) {
   .container {
     width: 92%;
   }
@@ -335,30 +335,30 @@ footer a:hover {
   }
 }
 
-@media(min-width:769px) {
+@media (min-width: 769px) {
   .open-slide {
     display: none;
   }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .navbar-top {
     display: none;
   }
   .container {
-    width: 94%
+    width: 94%;
   }
   main a {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 
-@media(min-width: 567px) {
+@media (min-width: 567px) {
   header .side-nav {
     padding-top: 80px;
   }
   main a {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   .HNclone {
     content: '';
