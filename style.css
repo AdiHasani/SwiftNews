@@ -239,34 +239,6 @@ main .side-nav a:hover {
   color: #FF6600;
 }
 
-.btn-load-more {
-  margin-top: 300px;
-  margin-bottom: 50px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  background: #FF6600;
-  font-size: 16px;
-  font-weight: 400;
-  color: #111111;
-  letter-spacing: 1px;
-  padding: 5px 20px;
-  box-shadow: 0 6px #111111;
-  border-radius: 10px;
-}
-
-.btn-load-more:hover {
-  box-shadow: 0 4px #111111;
-  top: 2px;
-}
-
-.btn-load-more:active {
-  box-shadow: 0 0 #111111;
-  top: 6px;
-}
-
 .HNclone {
   float: left;
   position: fixed;
