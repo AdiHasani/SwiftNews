@@ -187,20 +187,6 @@ form.search input[type="text"] {
   position: relative;
 }
 
-.HNclone {
-  float: left;
-  position: fixed;
-  top: 55px;
-  width: 1139px;
-  height: 30px;
-  background-color: #FFF;
-  border: 1px solid #000000;
-  border-radius: 0 0 10px 10px;
-  border-top: none;
-  padding-left: 15px;
-  font-size: 18px;
-}
-
 main a {
   color: #000000;
   font-size: 20px;
@@ -345,8 +331,5 @@ footer a:hover {
   }
   main a {
     font-size: .9em;
-  }
-  .HNclone {
-    display: none;
   }
 }
