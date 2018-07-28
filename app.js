@@ -132,7 +132,9 @@ const clearInput = () => {
 };
 
 const clearResults = () => {
-  elements.searchResList.innerHTML = '';
+  while (elements.searchResList.firstChild) {
+    elements.searchResList.removeChild(elements.searchResList.firstChild);
+  }
 };
 // Creating the DOM elements and inserting in the Ascending order
 const renderArticle = article => {
